@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boilerform: User signup example</title>
+
+
+    <link rel='stylesheet' href='https://rawgit.com/hankchizljaw/boilerform/master/dist/css/boilerform.min.css?v=1.1.2'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="../assets/bootstrap-material-design-font/css/material.css">
+	<link rel="stylesheet" href="../assets/tether/tether.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="../assets/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../assets/theme/css/style.css">
+    <link rel="stylesheet" href="../assets/iot/css/iot-additional.css" type="text/css"> 
+    <link rel="stylesheet" href="../assets/socicon/css/style.css">
+
+</head>
+
+<body>
+		<section id="menu-1a" data-rv-view="43">
+				<nav style="height: 80px;" class="navbar navbar-dropdown navbar-fixed-top my-navbar" style="background-color: #00003f;">
+						<div class="container">
+								<div class="iot-table">
+										<div class="iot-table-cell">
+												<div class="navbar-brand xxx">
+														<a href="http://acm.ut.ac.ir" class="navbar-logo"><img class="img-responsive up-logo" src="../home/acm_logo.gif" alt="acm logo"></a>
+												</div>
+										</div>
+										<div class="iot-table-cell">
+												<button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse"
+																data-target="#exCollapsingNavbar">
+														<div class="hamburger-icon"></div>
+												</button>
+												<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm"
+														id="exCollapsingNavbar">
+														<li class="nav-item"><a class="nav-link link" href="">تماس با ما</a></li>
+														<li class="nav-item"><a class="nav-link link" href="#"> درباره مسابقه و قوانین</a></li>
+														<li class="nav-item"><a class="nav-link link" href="http://acm.ut.ac.ir">acm وب‌سایت</a></li>
+														<li class="nav-item"><a class="nav-link link" href="../home/index.html">خانه</a></li>
+														<li class="nav-item nav-btn"><a style="letter-spacing: 0;font-family: 'Iranian Sans'" class="nav-link btn btn-white-outline btn-white" href="#register">ثبت نام</a></li>
+												</ul>
+												<button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+														<div class="close-icon"></div>
+												</button>
+										</div>
+								</div>
+						</div>
+				</nav>
+		</section>
+		<img class="signup_background" src="./signup_background.jpg">
+		<!-- The boilerform namespace -->
+		<div class="signup_container">
+			<form class="boilerform" action="" method="post">
+					<h1 class="o-heading" style="letter-spacing: 0;font-family: 'Iranian Sans'">ثبت نام</h1>
+					<div class="c-signup">
+							<!-- <div class="names"> -->
+							<div class="c-signup__field">
+									<label for="chief-first_name" class="c-label">Head First name</label>
+									<input type="text" name="chief-first_name" id="chief-first_name" class="c-input-field" />
+							</div>
+							<div class="c-signup__field">
+									<label for="chief-last_name" class="c-label">Head Last name</label>
+									<input type="text" name="chief-last_name" id="chief-last_name" class="c-input-field" />
+									<!-- </div> -->
+							</div>
+							<div class="c-signup__field">
+									<label for="phone-number" class="c-label">Head phone number</label>
+									<input type="text" name="phone-number" id="phone-number" class="c-input-field" />
+							</div>
+							<div class="c-signup__field c-signup__field--fill">
+									<label for="chief-email" class="c-label">Head Email address</label>
+									<input type="email" name="chief-email" id="chief-email" class="c-input-field" />
+							</div>
+							<div class="line"> </div>
+							<div class="line"> </div>
+							<div class="c-signup__field">
+									<label for="member-1-first_name" class="c-label">First name</label>
+									<input type="text" name="member-1-first_name" id="member-1-first_name" class="c-input-field" />
+							</div>
+							<div class="c-signup__field">
+									<label for="member-1-last_name" class="c-label">Last name</label>
+									<input type="text" name="member-1-last_name" id="member-1-last_name" class="c-input-field" />
+									<!-- </div> -->
+							</div>
+							<div class="c-signup__field c-signup__field--fill">
+									<label for="member-1-email" class="c-label">Email address</label>
+									<input type="email" name="member-1-email" id="member-1-email" class="c-input-field" />
+							</div>
+							<div class="c-signup__field">
+									<label for="member-2-first_name" class="c-label">First name</label>
+									<input type="text" name="member-2-first_name" id="member-2-first_name" class="c-input-field" />
+							</div>
+							<div class="c-signup__field">
+									<label for="member-2-last_name" class="c-label">Last name</label>
+									<input type="text" name="member-2-last_name" id="member-2-last_name" class="c-input-field" />
+									<!-- </div> -->
+							</div>
+							<div class="c-signup__field c-signup__field--fill">
+									<label for="member-2-email" class="c-label">Email address</label>
+									<input type="email" name="member-2-email" id="member-2-email" class="c-input-field" />
+							</div>
+							<div class="c-signup__button">
+									<button class="c-button" type="submit" style="margin-right: 92%">ثبت نام</button>
+							</div>
+					</div>
+			</form>
+		</div>
+
+
+</body>
+
+</html>
