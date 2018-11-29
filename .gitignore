@@ -1,2 +1,10 @@
+*.pyc
+*.cpython-35.pyc
+*~
+__pycache__
+env
 db.sqlite3
-env/
+/static
+.DS_Store
+.idea
+migrations

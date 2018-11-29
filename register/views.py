@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from django.http.response import HttpResponseRedirect
-# Create your views here.
-def home(request):
-    print(request.GET)
-    return HttpResponseRedirect('index.html')
+from register.forms import RegistrationForm
+
 
 def accept(request):
-    print("!")
-    print(request.GET)
-    return HttpResponseRedirect('index.html')   
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'done.html')
+    return render(request, 'index.html')
