@@ -16,13 +16,13 @@ class Team(models.Model):
     c2_first_name = models.CharField(max_length=80, blank=False)
     c2_last_name = models.CharField(max_length=80, blank=False)
     c2_email = models.EmailField(unique=True)
-    c2_phone_number = PhoneNumberField(null=True, blank=True)
+    # c2_phone_number = PhoneNumberField(null=True, blank=True)
     c2_college = models.CharField(max_length=80)
 
     c3_first_name = models.CharField(max_length=80, blank=False)
     c3_last_name = models.CharField(max_length=80, blank=False)
     c3_email = models.EmailField(unique=True)
-    c3_phone_number = PhoneNumberField(null=True, blank=True)
+    # c3_phone_number = PhoneNumberField(null=True, blank=True)
     c3_college = models.CharField(max_length=80)
 
     # contestant1 = models.ForeignKey(Leader, on_delete=models.CASCADE)
