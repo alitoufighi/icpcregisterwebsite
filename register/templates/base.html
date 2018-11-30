@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+{#  <meta http-equiv="X-UA-Compatible" content="IE=edge">#}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block header %}
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap-material-design-font/css/material.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/animate.css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/iot/css/iot-additional.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'assets/socicon/css/style.css' %}">
+
+
+	<title>University of Tehran ACM ICPC Selection Competition | University of Tehran ACM Student Chapter</title>
+</head>
+<body>
+    <section id="menu-1a" data-rv-view="43">
+        <nav class="navbar navbar-dropdown navbar-fixed-top my-navbar" style="background-color: #00003f;">
+            <div class="container">
+                <div class="iot-table">
+                    <div class="iot-table-cell">
+                        <div class="navbar-brand xxx">
+                            <a href="http://acm.ut.ac.ir" class="navbar-logo"><img class="img-responsive up-logo" src="{% static 'home/acm_logo.gif' %}" alt="acm logo"></a>
+                        </div>
+                    </div>
+                    <div class="iot-table-cell">
+                        <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse"
+                                data-target="#exCollapsingNavbar">
+                            <div class="hamburger-icon"></div>
+                        </button>
+                        <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm"
+                            id="exCollapsingNavbar">
+                            <li class="nav-item"><a class="nav-link link" href="contact">تماس با ما</a></li>
+                            <li class="nav-item"><a class="nav-link link" href="about"> درباره مسابقه و قوانین</a></li>
+														<li class="nav-item"><a class="nav-link link" href="//acm.ut.ac.ir">وب‌سایت acm</a></li>
+                            <li class="nav-item"><a class="nav-link link" href="/">خانه</a></li>
+                            <li class="nav-item nav-btn"><a style="letter-spacing: 0;font-family: 'Iranian Sans'" class="nav-link btn btn-white-outline btn-white" href="register">ثبت نام</a></li>
+                        </ul>
+                        <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                            <div class="close-icon"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+      </section>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

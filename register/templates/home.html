@@ -5,11 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Home</title>
-  <!-- <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 800px)" href="./mobile.css" /> -->
   <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 400px)" href="{% static 'home/style.css' %}" />
-  <!-- <link href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0-alpha21/dist/font-face.css" rel="stylesheet" type="text/css" /> -->
   <meta charset="utf-8">
-  <!-- <link rel='stylesheet' href='https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.css'> -->
 
   <link rel="stylesheet" href="{% static 'assets/bootstrap-material-design-font/css/material.css' %}">
   <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}">
@@ -40,7 +37,7 @@
                             <li class="nav-item"><a class="nav-link link" href="contact">تماس با ما</a></li>
                             <li class="nav-item"><a class="nav-link link" href="about"> درباره مسابقه و قوانین</a></li>
 														<li class="nav-item"><a class="nav-link link" href="http://acm.ut.ac.ir">وب‌سایت acm</a></li>
-                            <li class="nav-item"><a class="nav-link link" href="#">خانه</a></li>														
+                            <li class="nav-item"><a class="nav-link link" href="#">خانه</a></li>
                             <li class="nav-item nav-btn"><a style="letter-spacing: 0;font-family: 'Iranian Sans'" class="nav-link btn btn-white-outline btn-white" href="register">ثبت نام</a></li>
                         </ul>
                         <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -72,3 +69,36 @@
         </div>
   </div>
 </body>
+
+
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block header %}
+      <link rel="styleshet" type="text/css" media="screen and (min-device-width: 400px)" href="{% static 'home/style.css' %}" />
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+        <div class="whole-page">
+        <img class="contest_background" src="{% static 'home/acm_contest.jpg' %}">
+        <div class="content">
+        <img class="icpc_logo" src="{% static 'home/icpc_logo.png' %}"/>
+        <div class="text-box">
+            <div class="whole-text">
+                <h1 style="font-family: 'Iranian Sans';color: white;line-height: 1.5;">مسابقه‌ی انتخابی ICPC دانشگاه تهران</h1>
+            <h6 style="font-family: 'Iranian Sans';color: white; word-spacing: 3px;">شاخه‌ی دانشجویی ACM دانشگاه تهران</h6>
+            </div>
+            <div class="date" style="letter-spacing: 0;font-family: 'Iranian Sans'">
+                <div>
+                    پنج شنبه ۱۵ آذرماه ۱۳۹۷
+                </div>
+                <div>
+                    ساعت ۱۴ تا ۱۹
+                </div>
+            </div>
+        </div>
+        </div>
+  </div>
+{% endblock %}
