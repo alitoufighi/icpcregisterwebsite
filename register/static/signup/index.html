@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,26 +6,26 @@
 
     <link
       rel="stylesheet"
-      href="//rawgit.com/hankchizljaw/boilerform/master/dist/css/boilerform.min.css?v=1.1.2"
+      href="https://rawgit.com/hankchizljaw/boilerform/master/dist/css/boilerform.min.css?v=1.1.2"
     />
 
-    <link rel="stylesheet" href="{% static 'signup/style.css' %}" />
+    <link rel="stylesheet" href="style.css" />
 
     <link
       rel="stylesheet"
-      href="{% static 'assets/bootstrap-material-design-font/css/material.css' %}"
+      href="../assets/bootstrap-material-design-font/css/material.css"
     />
-    <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}" />
-    <link rel="stylesheet" href="{% static 'assets/animate.css/animate.min.css' %}" />
-    <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}" />
+    <link rel="stylesheet" href="../assets/tether/tether.min.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/dropdown/css/style.css" />
+    <link rel="stylesheet" href="../assets/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/theme/css/style.css" />
     <link
       rel="stylesheet"
-      href="{% static 'assets/iot/css/iot-additional.css' %}"
+      href="../assets/iot/css/iot-additional.css"
       type="text/css"
     />
-    <link rel="stylesheet" href="{% static 'assets/socicon/css/style.css' %}" />
+    <link rel="stylesheet" href="../assets/socicon/css/style.css" />
   </head>
 
   <body>
@@ -39,11 +38,11 @@
           <div class="iot-table">
             <div class="iot-table-cell">
               <div class="navbar-brand xxx" style="padding: 0 !important">
-                <a href="//acm.ut.ac.ir" class="navbar-logo"
+                <a href="http://acm.ut.ac.ir" class="navbar-logo"
                   ><img
                     class="img-responsive up-logo"
                     style="height: 3rem !important;"
-                    src="{% static 'home/acm_logo.gif' %}"
+                    src="../home/acm_logo.gif"
                     alt="acm logo"
                 /></a>
               </div>
@@ -62,10 +61,10 @@
                 id="exCollapsingNavbar"
               >
                 <li class="nav-item">
-                  <a class="nav-link link" href="contact">تماس با ما</a>
+                  <a class="nav-link link" href="../contactUs/index.html">تماس با ما</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link" href="about"> درباره مسابقه و قوانین</a>
+                  <a class="nav-link link" href="../texts/index.html"> درباره مسابقه و قوانین</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link link" href="http://acm.ut.ac.ir"
@@ -73,7 +72,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link" href="/">خانه</a>
+                  <a class="nav-link link" href="../home/index.html">خانه</a>
                 </li>
                 <li class="nav-item nav-btn">
                   <a
@@ -98,11 +97,10 @@
         </div>
       </nav>
     </section>
-    <img class="signup_background" src="{% static 'signup/signup_background.jpg' %}" />
+    <img class="signup_background" src="./signup_background.jpg" />
     <!-- The boilerform namespace -->
-
     <div class="signup_container">
-      <form class="boilerform" action="" method="post">{% csrf_token %}
+      <form class="boilerform" action="" method="post">
         <div class="c-signup">
           <div class="c-signup-member">
             <h2
@@ -111,77 +109,66 @@
             >
               Head
             </h2>
-            <br/>
+            <br />
             <!-- <div class="names"> -->
             <div class="c-signup__field">
-              <label for="c1_first_name" class="c-label"
-                >First Name</label
+              <label for="chief-first_name" class="c-label"
+                >Head First name</label
               >
               <input
                 type="text"
-                name="c1_first_name"
-                id="c1_first_name"
+                name="chief-first_name"
+                id="chief-first_name"
                 class="c-input-field"
               />
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c1_last_name" class="c-label"
-                >Last Name</label
+              <label for="chief-last_name" class="c-label"
+                >Head Last name</label
               >
               <input
                 type="text"
-                name="c1_last_name"
-                id="c1_last_name"
+                name="chief-last_name"
+                id="chief-last_name"
                 class="c-input-field"
               />
               <!-- </div> -->
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c1_email" class="c-label"
-                >Email Address</label
+              <label for="phone-number" class="c-label"
+                >Head phone number</label
               >
               <input
-                type="email"
-                name="c1_email"
-                id="c1_email"
+                type="text"
+                name="phone-number"
+                id="phone-number"
                 class="c-input-field"
               />
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c1_college" class="c-label">College (ECE, CS, etc.)</label>
-              <input
-                type="text"
-                name="c1_college"
-                id="c1_college"
-                class="c-input-field"
-              />
-            </div>
-              <br />
-              <div class="c-signup__field">
-              <label for="c1_phone_number" class="c-label"
-                >Phone Number</label
+              <label for="chief-email" class="c-label"
+                >Head Email address</label
               >
               <input
-                type="text"
-                name="c1_phone_number"
-                id="c1_phone_number"
+                type="email"
+                name="chief-email"
+                id="chief-email"
                 class="c-input-field"
               />
             </div>
-                <br>
-              <div class="c-signup__field">
-              <label for="name" class="c-label">Team Name</label>
+            <br />
+            <div class="c-signup__field">
+              <label for="chief-college" class="c-label">Head college</label>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="chief-college"
+                id="chief-college"
                 class="c-input-field"
               />
             </div>
-
           </div>
           <div class="v-line"></div>
           <div class="c-signup-member">
@@ -193,53 +180,47 @@
             </h2>
             <br />
             <div class="c-signup__field">
-              <label for="c2_first_name" class="c-label"
-                >First Name</label
+              <label for="member-1-first_name" class="c-label"
+                >First name</label
               >
               <input
                 type="text"
-                name="c2_first_name"
-                id="c2_first_name"
+                name="member-1-first_name"
+                id="member-1-first_name"
                 class="c-input-field"
               />
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c2_last_name" class="c-label">Last Name</label>
+              <label for="member-1-last_name" class="c-label">Last name</label>
               <input
                 type="text"
-                name="c2_last_name"
-                id="c2_last_name"
+                name="member-1-last_name"
+                id="member-1-last_name"
                 class="c-input-field"
               />
               <!-- </div> -->
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c2_email" class="c-label">Email Address</label>
+              <label for="member-1-email" class="c-label">Email address</label>
               <input
                 type="email"
-                name="c2_email"
-                id="c2_email"
+                name="member-1-email"
+                id="member-1-email"
                 class="c-input-field"
               />
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c2_college" class="c-label">College (ECE, CS, etc.)</label>
+              <label for="member-1-college" class="c-label">college</label>
               <input
                 type="text"
-                name="c2_college"
-                id="c2_college"
+                name="member-1-college"
+                id="member-1-college"
                 class="c-input-field"
               />
             </div>
-              {% if errors %}
-                  <br><br>
-                <div class="h5" style="color: red">
-                    Invalid Inputs.
-                </div>
-            {% endif %}
           </div>
           <div class="v-line"></div>
           <div class="c-signup-member">
@@ -251,50 +232,49 @@
             </h2>
             <br />
             <div class="c-signup__field">
-              <label for="c3_first_name" class="c-label"
-                >First Name</label
+              <label for="member-2-first_name" class="c-label"
+                >First name</label
               >
               <input
                 type="text"
-                name="c3_first_name"
-                id="c3_first_name"
+                name="member-2-first_name"
+                id="member-2-first_name"
                 class="c-input-field"
               />
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c3_last_name" class="c-label">Last Name</label>
+              <label for="member-2-last_name" class="c-label">Last name</label>
               <input
                 type="text"
-                name="c3_last_name"
-                id="c3_last_name"
+                name="member-2-last_name"
+                id="member-2-last_name"
                 class="c-input-field"
               />
               <!-- </div> -->
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c3_email" class="c-label">Email Address</label>
+              <label for="member-2-email" class="c-label">Email address</label>
               <input
                 type="email"
-                name="c3_email"
-                id="c3_email"
+                name="member-2-email"
+                id="member-2-email"
                 class="c-input-field"
               />
             </div>
             <br />
             <div class="c-signup__field">
-              <label for="c3_college" class="c-label">College (ECE, CS, etc.)</label>
+              <label for="member-2-college" class="c-label">college</label>
               <input
                 type="text"
-                name="c3_college"
-                id="c3_college"
+                name="member-2-college"
+                id="member-2-college"
                 class="c-input-field"
               />
             </div>
           </div>
         </div>
-
         <!--
           <div class="uni-options">
             <div class="label-uni"><label for="uni"> university </label></div>
@@ -322,16 +302,16 @@
               Signup
             </button>
           </div>
-{#          <div class="tehran">#}
-{#            <div class="pre_text">#}
-{#              !آیا مایل به شرکت حضوری در مسابقه هستید ؟  <br />#}
-{#              برای دانشجویان دانشگاه تهران که قصد شرکت برای مسابقه‌ی انتخابی#}
-{#              دانشگاه را دارند، شرکت حضوری الزامی است#}
-{#            </div>#}
-{#            <div class="pre_check">#}
-{#              <input type="checkbox" value="بله" /> بله <br />#}
-{#            </div>#}
-{#          </div>#}
+          <div class="tehran">
+            <div class="pre_text">
+              !آیا مایل به شرکت حضوری در مسابقه هستید ؟  <br />
+              برای دانشجویان دانشگاه تهران که قصد شرکت برای مسابقه‌ی انتخابی
+              دانشگاه را دارند، شرکت حضوری الزامی است
+            </div>
+            <div class="pre_check">
+              <input type="checkbox" value="بله" /> بله <br />
+            </div>
+          </div>
         </div>
       </form>
     </div>

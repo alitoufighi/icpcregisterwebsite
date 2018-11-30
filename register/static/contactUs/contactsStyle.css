@@ -1,0 +1,55 @@
+html {
+    width: 100%;
+    height: 100%;
+    /* background: grey; */
+}
+
+ul li a {
+    font-size: 0.85rem !important;
+    font-family: "Iranian Sans Bold";
+    font-style: normal !important;
+}
+
+#contact_container {
+    /* background: grey; */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#about_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#map_container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_1,
+#about_2 {
+    color: white;
+    padding-bottom: 10px;
+    height: 400px;
+    width: 50%;
+    border: 1px solid grey;
+    text-align: center;
+    align-items: flex-end;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: right;
+    align-items: center;
+    padding-top: 130px;
+}
+
+
+#about_title {
+    color: grey;
+}

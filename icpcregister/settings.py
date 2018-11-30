@@ -25,7 +25,7 @@ SECRET_KEY = 't%jiyijnajf@w6)zs^$7nak%+gcbup)1+8n&r)+jdk&prgenbi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,17 +120,26 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 # STATIC_ROOT = os.path.join('static')
 # STATIC_URL = '/static/'
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+
+# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+# # STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     os.path.join(PROJECT_ROOT, 'static'),
+# ]
+
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, 'static'),
-]
+# STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# STATIC_ROOT = ''
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # STATICFILES_DIRS = ( os.path.join('static'), )
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/').replace('\\', '/')
-MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media/').replace('\\', '/')
+# MEDIA_URL = '/media/'
 
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'IR'
