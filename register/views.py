@@ -8,4 +8,4 @@ def accept(request):
         if form.is_valid():
             form.save()
             return render(request, 'done.html')
-    return render(request, 'index.html')
+    return render(request, 'signup.html')
