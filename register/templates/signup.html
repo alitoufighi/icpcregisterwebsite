@@ -234,10 +234,14 @@
                 class="c-input-field"
               />
             </div>
-              {% if errors %}
+              {% if error %}
                   <br><br>
-                <div class="h5" style="color: red">
+                  <div class="h5" style="color: red">
+                  {% if 'name' in error %}
+                    This name is already taken.
+                  {% else %}
                     Invalid Inputs.
+                  {% endif %}
                 </div>
             {% endif %}
           </div>
